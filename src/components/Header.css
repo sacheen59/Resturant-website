@@ -1,0 +1,141 @@
+.header {
+  margin: 0 auto;
+  width: 97vw;
+  /* border: 1px solid palegreen; */
+  grid-area: header;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 58.2px;
+}
+
+.left-section {
+  width: 205px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  /* border: 1px solid green; */
+}
+
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-name {
+  /* border: 1px solid grey; */
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.logo-img,
+.logo-name:hover {
+  cursor: pointer;
+}
+
+.middle-section {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.dashboard,
+.order-list,
+.history,
+.bill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.middle-section-vector {
+  width: 18px;
+  height: 18px;
+}
+
+.middle-section-vector img {
+  width: 100%;
+  height: 100%;
+}
+
+.middle-names {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.middle-names span {
+  color: blue;
+}
+
+.middle-names:hover {
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification img {
+  width: 15px;
+  height: 20px;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.notification:hover {
+  cursor: pointer;
+}
+
+.profile-img:hover {
+  /* border: 2px solid blue; */
+  cursor: pointer;
+}
