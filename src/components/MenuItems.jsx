@@ -1,10 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const MenuItems = (props) => {
   return (
-    <li className="flex items-center gap-1">
-      <span>{props.itemIcon}</span>
-      <a href="">{props.itemLabel}</a>
+    // "flex items-center gap-2 hover:text-blue-500"
+    <li>
+      <NavLink
+        to={props.path}
+        className={({ isActive }) =>
+          `flex items-center gap-2 hover:text-blue-500 ${
+            isActive ? "text-blue-500" : "text-black"
+          }`
+        }
+      >
+        <span>{props.itemIcon}</span>
+        <span>{props.itemLabel}</span>
+      </NavLink>
     </li>
   );
 };

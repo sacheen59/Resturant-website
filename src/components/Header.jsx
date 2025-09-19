@@ -1,4 +1,3 @@
-import React from "react";
 import logoImage from "../assets/images/logo.jpg";
 import profileImage from "../assets/images/profile.jpg";
 
@@ -17,26 +16,30 @@ const Header = () => {
       id: 1,
       label: "Dashboard",
       icon: <LayoutDashboard />,
+      path: '/'
     },
     {
       id: 2,
       label: "Order list",
       icon: <ClipboardList />,
+      path: '/order-list'
     },
     {
       id: 3,
       label: "History",
       icon: <History />,
+      path: '/history'
     },
     {
       id: 4,
       label: "Bills",
       icon: <ReceiptText />,
+      path: '/bills'
     },
   ];
 
   return (
-    <header className="flex justify-between items-center auto-container h-[65px]">
+    <header className="flex justify-between auto-container items-center h-[65px]">
       <div className="flex items-center gap-[10px]">
         <div className="h-14 w-14 rounded-full">
           <img src={logoImage} alt="" className="h-full w-full rounded-full" />
@@ -50,6 +53,7 @@ const Header = () => {
               key={item.id}
               itemIcon={item.icon}
               itemLabel={item.label}
+              path = {item.path}
             />
           ))}
         </ul>
