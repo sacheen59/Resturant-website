@@ -1,5 +1,6 @@
 import React from "react";
 import logoImage from "../assets/images/logo.jpg";
+import profileImage from "../assets/images/profile.jpg";
 
 import {
   Bell,
@@ -35,7 +36,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center auto-container h-[65px]">
       <div className="flex items-center gap-[10px]">
         <div className="h-14 w-14 rounded-full">
           <img src={logoImage} alt="" className="h-full w-full rounded-full" />
@@ -45,14 +46,20 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-10">
           {menuItems.map((item) => (
-            <MenuItems key={item.id} itemIcon={item.icon} itemLabel = {item.label}/>
+            <MenuItems
+              key={item.id}
+              itemIcon={item.icon}
+              itemLabel={item.label}
+            />
           ))}
         </ul>
       </nav>
-      <div>
-        <Bell />
+      <div className="flex gap-6 items-center">
+        <span>
+          <Bell />
+        </span>
         <div>
-          <img src="" alt="" />
+          <img src={profileImage} alt="proifle-image" />
         </div>
       </div>
     </header>

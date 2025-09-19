@@ -11,3 +11,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.auto-container {
+  width: 95%;
+  margin: 0 auto;
+}
