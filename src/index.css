@@ -16,3 +16,8 @@ body {
   width: 95%;
   margin: 0 auto;
 }
+
+@theme {
+  --color-border-color: #e0e0e0;
+  --color-link-color: oklch(62.3% 0.214 259.815);
+}

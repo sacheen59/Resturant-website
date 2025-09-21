@@ -8,8 +8,8 @@ const MenuItems = (props) => {
       <NavLink
         to={props.path}
         className={({ isActive }) =>
-          `flex items-center gap-2 hover:text-blue-500 ${
-            isActive ? "text-blue-500" : "text-black"
+          `flex items-center gap-2 hover:text-link-color ${
+            isActive ? "text-link-color" : "text-black"
           }`
         }
       >

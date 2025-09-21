@@ -16,57 +16,63 @@ const Header = () => {
       id: 1,
       label: "Dashboard",
       icon: <LayoutDashboard />,
-      path: '/'
+      path: "/",
     },
     {
       id: 2,
       label: "Order list",
       icon: <ClipboardList />,
-      path: '/order-list'
+      path: "/order-list",
     },
     {
       id: 3,
       label: "History",
       icon: <History />,
-      path: '/history'
+      path: "/history",
     },
     {
       id: 4,
       label: "Bills",
       icon: <ReceiptText />,
-      path: '/bills'
+      path: "/bills",
     },
   ];
 
   return (
-    <header className="flex justify-between auto-container items-center h-[65px]">
-      <div className="flex items-center gap-[10px]">
-        <div className="h-14 w-14 rounded-full">
-          <img src={logoImage} alt="" className="h-full w-full rounded-full" />
-        </div>
-        <span className="text-2xl font-[500]">Logo here</span>
-      </div>
-      <nav>
-        <ul className="flex items-center gap-10">
-          {menuItems.map((item) => (
-            <MenuItems
-              key={item.id}
-              itemIcon={item.icon}
-              itemLabel={item.label}
-              path = {item.path}
+    <div className="border-b-1 border-border-color">
+      <header className="flex justify-between auto-container items-center h-[70px]">
+        <div className="flex items-center gap-[10px]">
+          <div className="h-14 w-14 rounded-full">
+            <img
+              src={logoImage}
+              alt=""
+              className="h-full w-full rounded-full"
             />
-          ))}
-        </ul>
-      </nav>
-      <div className="flex gap-6 items-center">
-        <span>
-          <Bell />
-        </span>
-        <div>
-          <img src={profileImage} alt="proifle-image" />
+          </div>
+          <span className="text-2xl font-[500]">Logo here</span>
         </div>
-      </div>
-    </header>
+        <nav>
+          <ul className="flex items-center gap-10">
+            {menuItems.map((item) => (
+              <MenuItems
+                key={item.id}
+                itemIcon={item.icon}
+                itemLabel={item.label}
+                path={item.path}
+              />
+            ))}
+          </ul>
+        </nav>
+        <div className="flex gap-6 items-center">
+          <span>
+            <Bell />
+          </span>
+          <div>
+            <img src={profileImage} alt="proifle-image" />
+          </div>
+        </div>
+      </header>
+    </div>
   );
 };
 

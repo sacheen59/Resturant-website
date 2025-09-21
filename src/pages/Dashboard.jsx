@@ -2,7 +2,14 @@ import React from 'react'
 
 const Dashboard = () => {
   return (
-    <h1>Dashboard</h1>
+   <div className='h-full grid grid-cols-[3fr_1fr]'>
+    <div className='bg-red-300'>
+      Order List
+    </div>
+    <div className='bg-amber-300'>
+      Customer Information
+    </div>
+   </div>
   )
 }
 
